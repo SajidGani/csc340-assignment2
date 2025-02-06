@@ -17,9 +17,8 @@ public class WeatherController {
         RestTemplate restTemplate = new RestTemplate();
 
         // Fetch weather data from the Weather API
-        String response = restTemplate.getForObject(url, String.class);
+        return restTemplate.getForObject(url, String.class);
 
-        // Return the weather response as a String
-        return response;
+
     }
 }
